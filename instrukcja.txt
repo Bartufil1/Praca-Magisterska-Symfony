@@ -1,0 +1,10 @@
+# Podatna
+
+1. Wejść pod adres localhost:8000/login
+2. Zalogować się danymi Admin i hasło Mitm123
+2. Przejść pod adres http://localhost:8000/_profiler/empty/search/results?limit=10
+3. Wybrać odpowiedni request z loginem i typem POST
+
+# Zabezpieczona
+
+1. Plik env z dev zmienić na prod
