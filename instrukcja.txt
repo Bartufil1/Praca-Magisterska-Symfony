@@ -1,0 +1,9 @@
+# Podatna
+
+1. Wejść pod adres http://localhost:8000/lfi?file=../test.txt
+2. Zostanie wyswietlona zawetość pliku
+
+# Zabezpieczona
+
+1. Wejść pod adres http://localhost:8000/lfi-secure?file=../test.txt
+2. Zostanie zwrócona informacja ,że nieprawidłowa nazwa pliku
