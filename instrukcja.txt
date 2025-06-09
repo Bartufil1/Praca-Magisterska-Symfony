@@ -1,0 +1,5 @@
+1. Podatna
+Nalezy wejść pod adres localhost: http://localhost:8000/user/profile/123
+
+2. Zabezpieczona 
+Nalezy wejść pod adres localhost: http://localhost:8000/userSecurity/profile/123
