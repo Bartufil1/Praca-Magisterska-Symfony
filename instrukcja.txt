@@ -1,0 +1,10 @@
+1. Uruchom docker desktop
+2. wejdz w folder z projektem
+3. uruchom docker compose up
+4. W przeglądarace wejdź pod adres http://localhost:8000/_fragment?_path=_controller%3Dsystem%26command%3Did%26return_value%3Dnull&_hash=txElIo1DmCsvL3L4UbW3%2FhjrJ8%2Fte5AiH67wFsj6NeQ%3D
+
+
+
+Zalecenia
+- w config/packages/framework.yaml zakomentowac linie fragments: true
+- w pliku .env zmienić APP_SECRET na mocniejszy oraz dodać go do zmiennych środowiskowych 
