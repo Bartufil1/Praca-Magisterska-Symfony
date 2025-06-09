@@ -1,0 +1,4 @@
+# Podatna
+
+1. Uruchomić program brute_force_attack.py
+
