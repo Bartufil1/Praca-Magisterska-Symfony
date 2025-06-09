@@ -1,0 +1,9 @@
+# Podatna
+
+1. Wysłać POST pod adres http://localhost:8000/divide z ciałem { 'numerator': 10, 'denominator': 'asd' }
+2. Zostanie zwrócony bład a dokładniej strona z dokładnym błędme
+
+# Zabezpieczona
+
+1. Wejśc w .env i zmienić APP_ENV z dev na prod
+2. Powtórzyć to co wyżej
