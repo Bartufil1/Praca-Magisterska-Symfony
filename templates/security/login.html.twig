@@ -1,0 +1,18 @@
+<form action="{{ path('app_login') }}" method="POST">
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+    <label>
+        Username:<br>
+        <input type="text" name="_username" required autofocus>
+    </label>
+    <br><br>
+
+    <label>
+        Password:<br>
+        <input type="password" name="_password" required>
+    </label>
+    <br><br>
+
+    <button type="submit">Login</button>
+</form>
+

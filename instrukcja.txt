@@ -1,0 +1,9 @@
+# Podatna
+
+1. Otworzyć plik example.html
+
+# Zabezpieczona
+
+1. Otworzyć plik example.html
+2. W pliku packages/security.yaml odkemonetować kod od main: do końca 
+3. Poleci błąd CSRF Token not found

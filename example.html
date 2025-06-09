@@ -1,0 +1,14 @@
+<form action="http://localhost:8000/logout" method="POST" style="display: none">
+  <button type="submit"></button>
+</form>
+<script>
+  document.forms[0].submit();
+</script>
+<form action="https://localhost:8000/login" method="POST" style="display: none">
+  <input name="_username" value="user" />
+  <input name="_password" value="pass" />
+  <button type="submit"></button>
+</form>
+<script>
+  document.forms[1].submit();
+</script>
