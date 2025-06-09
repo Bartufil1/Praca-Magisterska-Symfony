@@ -1,0 +1,9 @@
+controllers:
+  resource: ../../src/Controller/
+  type: annotation
+    
+    # Możemy dodać dwie różne trasy:
+    - path: /vulnerable-login
+      controller: App\Controller\PasswordInLogController::vulnerableLogin
+    - path: /secure-login
+      controller: App\Controller\PasswordInLogController::secureLogin

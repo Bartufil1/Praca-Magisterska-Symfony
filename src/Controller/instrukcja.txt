@@ -1,0 +1,21 @@
+Podatna
+1. Uruchomić aplikacje Postman
+2. Wysłać request 
+localhost:8000/login-insecure
+z body: 
+{
+    "login": "test",
+    "password": "test"
+}
+3. Przejść do plików w Kontenerze z aplikacją i wejść pod ściezkę /var/log
+
+Bezpieczna
+1. Uruchomić aplikacje Postman
+2. Wysłać request 
+localhost:8000/login-secure
+z body: 
+{
+    "login": "test",
+    "password": "test"
+}
+3. Przejść do plików w Kontenerze z aplikacją i wejść pod ściezkę /var/log
