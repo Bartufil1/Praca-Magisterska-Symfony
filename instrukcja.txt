@@ -1,0 +1,10 @@
+# Podatna
+
+1. Wejść pod adres localhost:8000/
+2. Sprobować się zalogować jakimiś danymi
+3. Sprawdzić konsole ,że dane są widoczne 
+
+# Zabezpieczona
+
+1. Wejść pod adres localhost:8000/secure
+2. Następnie powinno zostac wykonane przkierowanie z kodem 301 na stronę https://localhost:8000/secure
