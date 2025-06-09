@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My Blog{% endblock %}
+
+{% block body %}
+<div class="">
+
+    {% include '/commons/search.html.twig' %}
+
+    {% if search is defined %}
+        <p>Search results for "{{ search }}"</p>
+    {% endif %}
+
+    <div class="add-comment">
+            <h3>Add a comment</h3>
+            <form name="add-comment" method="get" name=search action="{{ path('app_blog_post_search') }}">
+                <textarea name="s" placeholder="Your comment"></textarea>
+                <button type="submit">Add a comment</button>
+            </form>
+    </div>
+
+</div>
+{% endblock %}
