@@ -24,8 +24,7 @@ class PasswordInLogSecureController
 
     public function login(Request $request): Response
     {
-        $data = $request->request->all();
-
+        $data = json_decode($request->getContent(), true);
         $username = $data['username'] ?? 'unknown';
         $this->logger->info('Login attempt', ['username' => $username]);
 

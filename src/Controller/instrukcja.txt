@@ -7,7 +7,7 @@ z body:
     "login": "test",
     "password": "test"
 }
-3. Przejść do plików w Kontenerze z aplikacją i wejść pod ściezkę /var/log
+3. Przejść do plików w Kontenerze z aplikacją i wejść pod ściezkę /var/log/insecure.log
 
 Bezpieczna
 1. Uruchomić aplikacje Postman
@@ -18,4 +18,4 @@ z body:
     "login": "test",
     "password": "test"
 }
-3. Przejść do plików w Kontenerze z aplikacją i wejść pod ściezkę /var/log
+3. Przejść do plików w Kontenerze z aplikacją i wejść pod ściezkę /var/log/secure.log

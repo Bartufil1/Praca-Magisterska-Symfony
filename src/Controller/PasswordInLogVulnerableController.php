@@ -17,7 +17,6 @@ class PasswordInLogVulnerableController
             public function log($level, \Stringable|string $message, array $context = []): void
             {
                 $logFile = '/var/log/insecure.log';
-                var_dump($logFile);
                 file_put_contents($logFile, "[$level] $message (🔴 VULNERABLE) " . json_encode($context) . PHP_EOL, FILE_APPEND);
             }
         };
@@ -25,9 +24,10 @@ class PasswordInLogVulnerableController
 
     public function login(Request $request): Response
     {
-        $data = $request->request->all();
-
-        $this->logger->info('Login attempt', ['data' => $data]);
+        $data = json_decode($request->getContent(), true);
+        $username = $data['username'] ?? 'unknown';
+        $password = $data['password'] ?? 'unknown';
+        $this->logger->info('Login attempt', ['username' => $username, 'password' => $password]);
 
         return new Response('Login attempt logged to insecure.log.');
     }
