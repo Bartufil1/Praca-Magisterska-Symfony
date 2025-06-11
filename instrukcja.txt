@@ -1,6 +1,6 @@
 # Podatna
 
-1. Wejść pod adres http://localhost:8000/message
+1. Wejść pod adres http://localhost:8000/message-unsecure
 2. W polu Add Comment wpisać <script>alert('Test')</script>
 3. Wcinąść przycisk Add a comment
 
