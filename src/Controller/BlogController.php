@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class BlogController extends AbstractController
 {
-    #[Route('/message', name: 'app_blog_post_search', methods: ['GET'])]
+    #[Route('/message-unsecure', name: 'app_blog_post_search', methods: ['GET'])]
     public function search(Request $request): Response
     {
         $search = $request->get('s');
@@ -20,7 +20,7 @@ class BlogController extends AbstractController
         ]);
     }
 
-    #[Route('/message-secure', name: 'app_blog_post_search', methods: ['GET'])]
+    #[Route('/message-secure', name: 'app_blog_post_search_secure', methods: ['GET'])]
     public function search_secure(Request $request): Response
     {
         $search = $request->get('s');
