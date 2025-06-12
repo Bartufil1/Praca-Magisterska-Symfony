@@ -73,7 +73,7 @@ curl "http://localhost:8000/lfi?file=../../.env"
 
 ## ℹ️ Informacje dodatkowe
 
-Ta demonstracja jest częścią pracy magisterskiej opartej na OWASP TOP 10 w Symfony. Więcej informacji:  
+Ta demonstracja jest częścią pracy magisterskiej opartej na OWASP TOP 10 w Symfony. 
 
 ---
 
