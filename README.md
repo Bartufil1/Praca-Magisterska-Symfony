@@ -36,14 +36,14 @@ Jeśli plik `test.txt` znajduje się w katalogu `/files`, jego zawartość zosta
 
 Spróbuj wykonać żądanie z sekwencją `../`:
 ```
-http://localhost:8000/lfi?file=../../.env
+http://localhost:8000/lfi?file=../../../.env
 ```
 
 Jeśli aplikacja jest **podatna**, serwer zwróci zawartość pliku `.env`, co jest niebezpieczne – atakujący może odczytać hasła, klucze API itp.
 
 W **wersji bezpiecznej** to samo żądanie:
 ```
-http://localhost:8000/lfi-secure?file=../../.env
+http://localhost:8000/lfi-secure?file=../../../.env
 ```
 zostanie zablokowane – otrzymasz komunikat `File not found or invalid`.
 
@@ -53,12 +53,12 @@ Możesz również testować aplikację wysyłając żądania `GET`:
 
 #### Postman
 - Metoda: `GET`
-- URL: `http://localhost:8000/lfi?file=../../.env`
+- URL: `http://localhost:8000/lfi?file=../../../.env`
 - Sprawdź odpowiedź serwera
 
 #### curl
 ```bash
-curl "http://localhost:8000/lfi?file=../../.env"
+curl "http://localhost:8000/lfi?file=../../../.env"
 ```
 
 ---
