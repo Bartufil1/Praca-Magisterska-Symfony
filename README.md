@@ -28,7 +28,7 @@ Po uruchomieniu aplikacji:
 
 Wejdź w przeglądarce na adres:
 ```
-http://localhost:8000/lfi?file=test.txt
+http://localhost:8000/lfi?file=../test.txt
 ```
 Jeśli plik `test.txt` znajduje się w katalogu `/files`, jego zawartość zostanie wyświetlona. Tego typu operacja jest dozwolona i symuluje dostęp do dozwolonych danych.
 
