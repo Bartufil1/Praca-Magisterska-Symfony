@@ -17,8 +17,8 @@ docker compose up --build
 
 Po uruchomieniu, aplikacje będą dostępne pod następującymi adresami:
 
-- 📂 **Wersja podatna**: [http://localhost:8000/lfi?file=../.test.txt](http://localhost:8000/lfi?file=../.test.txt)
-- 🔒 **Wersja bezpieczna**: [http://localhost:8000/lfi-secure?file=../.test.txt](http://localhost:8000/lfi-secure?file=../.test.txt)
+- 📂 **Wersja podatna**: [http://localhost:8000/lfi?file=../.test.txt](http://localhost:8000/lfi?file=../test.txt)
+- 🔒 **Wersja bezpieczna**: [http://localhost:8000/lfi-secure?file=../.test.txt](http://localhost:8000/lfi-secure?file=../test.txt)
 
 ## 🧪 Testowanie podatności
 
